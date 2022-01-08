@@ -743,6 +743,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
   }
 
   .segment-four .btn-more {
-  margin-left: 78px;
+  margin-left: 100px;
+  }
+
+  .btn-more-contact {
+    margin-left: 100px;
   }
 }

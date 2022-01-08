@@ -702,6 +702,10 @@ footer h2 {
   }
 
   .segment-four .btn-more {
-  margin-left: 78px;
+  margin-left: 100px;
+  }
+
+  .btn-more-contact {
+    margin-left: 100px;
   }
 }

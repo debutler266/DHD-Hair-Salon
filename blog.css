@@ -663,6 +663,10 @@ footer h2 {
       font-size: 12px;
     }
 
+    .card h3 {
+      margin-left: 100px;
+    }
+
     .segment-three a  {
       display: inline-block;
       margin: 9px 147px 13px 125px;
@@ -682,6 +686,10 @@ footer h2 {
   }
 
   .segment-four .btn-more {
-  margin-left: 78px;
+  margin-left: 100px;
+  }
+
+  .btn-more-contact {
+    margin-left: 100px;
   }
 }

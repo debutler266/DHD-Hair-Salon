@@ -252,7 +252,7 @@ header.sticky ul li a {
 #myMenu {
   list-style-type: none;
   padding: 0;
-  margin-top: 60px;
+  margin-top: 1px;
 }
 
 /*navigation links */
@@ -636,6 +636,10 @@ footer h2 {
   }
 
   .segment-four .btn-more {
-  margin-left: 78px;
+  margin-left: 100px;
+  }
+
+  .btn-more-contact {
+    margin-left: 100px;
   }
 }

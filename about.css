@@ -278,7 +278,7 @@ header.sticky ul li a {
 
 .picture {
   width: 50%;
-  background: url("img/hair1.jpg") no-repeat center;
+  background: url("img/newsletter.jpg") no-repeat center;
   background: cover;
 }
 
@@ -754,6 +754,11 @@ footer h2 {
   .carousel-caption h3 {
     margin-bottom: 45px;
 }
+
+.picture {
+  position: relative;
+  margin-top: 100px;
+}
   }
 
   @media(min-width: 300px) and (max-width:400px) {
@@ -783,6 +788,19 @@ footer h2 {
   }
 
   .segment-four .btn-more {
-  margin-left: 78px;
+  margin-left: 100px;
+  }
+
+  .btn-more-contact {
+    margin-left: 100px;
+  }
+
+  .picture {
+    position: relative;
+    margin-top: 45px;
+  }
+
+  .about {
+    padding: 30px 30px;
   }
 }

@@ -423,8 +423,17 @@ a.buy-btn{
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
   header .logo {
-    font-size: 1rem;
-    margin-left: 45px;
+    font-size: 0.4em;
+    margin-left: 25px;
     text-decoration: none;
+    color: #222!important;
+  }
+
+  a .fa {
+    font-size: 0.5em;
+  }
+
+  a.btn-more {
+    margin-left: 50px;
   }
 }
