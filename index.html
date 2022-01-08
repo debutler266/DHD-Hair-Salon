@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cookies/purecookie.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/abb7dd614d.js" crossorigin="anonymous"></script>
+    <script src="cookies/purecookie.js"></script>
+
+    <title>Salon Website</title>
+  </head>
+  <body>
+    <header>
+      <!--<img src="img/applelogo.png" alt="Apple" class="logo"> -->
+       <a href="index.html" class="logo">DHD Hair</a>
+      <ul>
+        <div class="dropdown">
+        <li><a class="dropdown" href="index.html">Home</a></li>
+           <div class="dropdown-content">
+             <a href="lather.html">Lather Lounge</a>
+             <li class="divider"></li>
+             <!--<hr> -->
+             <a href="sanctuary.html">The Sanctuary</a>
+             <a href="partner.html">Partners</a>
+            </div>
+            </div>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hair.html">Services</a></li>
+        <li><a href="blog.html">Social</a></li>
+        <li><a href="book.html">Booking</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="search.html">Search</a></li>
+      </ul>
+
+      <i id="burger" class="material-icons" onclick="burger()">menu</i>
+      <i id="quit" class="material-icons" onclick="quit()">clear</i>
+
+      <div id="links">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="hair.html">Services</a>
+  <a href="blog.html">Social</a>
+  <a href="book.html">Booking</a>
+  <a href="lather.html">Lather Lounge</a>
+  <a href="sanctuary.html">Sanctuary</a>
+  <a href="product.html">Products</a>
+  <a href="partner.html">Partners</a>
+  <!--<a href="search.html">Search</a>-->
+  <a href="mailto:debutler255@gmail.com">Contact</a>
+  </div>
+
+    </header>
+
+    <section class="banner">
+
+    </section>
+
+    <!-- Cookies -->
+
+
+    <!-- Home Banner -->
+    <section class="home">
+      <div class="container">
+        <h2>Header Text</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- carousel slide indicators -->
+          <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Slide wrappers -->
+            <div class="carousel-inner">
+
+              <div class="item active">
+                <img src="img/sbanner1.jpg" alt="main-banner" style="width:100%;">
+                <div class="carousel-caption">
+                  <h3>Caption Title</h3>
+                  <h4>Some Salon related text.</h4>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="img/sbanner2.jpg" alt="banner2" style="width:100%;">
+                <div class="carousel-caption">
+                  <h3>Caption 2 Title</h3>
+                  <p>Some Salon related text.</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="img/sbanner3.jpg" alt="banner3" style="width:100%;">
+                <div class="carousel-caption">
+                  <h3>Caption 3 Title</h3>
+                  <p>Some Salon related text.</p>
+                </div>
+              </div>
+
+
+            <div class="item">
+              <img src="img/sbanner4.jpg" alt="banner4" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Caption 4 Title</h3>
+              <a href="#"><p>Some Salon related link.</p></a>
+              </div>
+            </div>
+          </div>
+
+            <!-- carousel controls (left/right) -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">previous</span>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">next</span>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Showcase -->
+    <section class="show" id="show">
+      <div class="title">
+        <h1 class="titleText">The <span>DHD</span> Menu </h1>
+        <p>Cum est cubilia praesent posuere eu proin eget.</p>
+      </div>
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/show1.jpg" alt="showcase1">
+          </div>
+          <div class="text">
+          <h3><a href="book.html">DHD Booking</h3></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/square1.jpg" alt="showcase1">
+          </div>
+          <div class="text">
+          <h3><a href="hair.html">DHD Hair</h3></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/square2.jpg" alt="showcase1">
+          </div>
+          <div class="text">
+          <h3><a href="sanctuary.html">DHD The Sanctuary</h3></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/square3.jpg" alt="showcase1">
+          </div>
+          <div class="text">
+            <h3><a href="lather.html">DHD Lather Lounge</h3></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/sqaure-2.jpg" alt="showcase1">
+          </div>
+          <div class="text">
+            <h3><a href="product.html">DHD Products</h3></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/show1.jpg" alt="showcase1">
+          </div>
+          <div class="text">
+          <h3><a href="partner.html">DHD Partners</h3></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/square1.jpg" alt="showcase1">
+          </div>
+          <div class="text">
+            <h3><a href="about.html">DHD Privacy Policy</h3></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/square5.jpg" alt="showcase1">
+          </div>
+          <div class="text">
+            <h3><a href="about.html">About DHD</h3></a>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/square2.jpg" alt="showcase1">
+          </div>
+          <div class="text">
+            <h3><a href="blog.html">DHD Social</h3></a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="title">
+        <a href="#" class="show-btn">View All</a>
+      </div> -->
+    </section>
+
+
+    <!-- Newsletter section -->
+    <section class="news">
+      <div class="newsletter-container">
+        <div class="picture"></div>
+        <div class="newsletter">
+          <h1>Become part of our community</h1>
+            <p>Signup for our newsletter & don't miss out on our latest updates, offers, & events!</p>
+            <button onclick="document.location='##'">Signup</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Footer-->
+      <footer>
+
+          <div class="footer-container">
+            <div class="footer-row">
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30">
+                <h3>DHD HAIR</h3>
+                <p>DHD Hair is.. dignissim. Gravida posuere magnis tristique netus volutpat. Sagittis dictum suscipit,
+                  scelerisque placerat.
+                  Eros ad sodales netus sagittis.</p>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+                <h2>DHD Important Links</h2>
+                <ul>
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Link 5</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
+                <h2>Social Media</h2>
+                <p>Follow DHD Hair on social media to keep up with tht latest updates & events.</p>
+                <a href="#"><i class="fa fa-instagram"><h5>Instagram</h5></i> </a>
+                <a href="#"><i class="fa fa-facebook"><h5>Facebook</h5></i> </a>
+                <a href="#"><i class="fa fa-twitter"></i> </a>
+                <a href="#"><i class="fab fa-youtube-square"></i> </a>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-four sm-mb-30">
+                <h2>Get In Touch</h2>
+                <p>Need to get in touch? Contact us directly</p>
+                <a href="mailto:debutler255@gmail.com" class="btn-more">Contact DHD</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+          <p class="footer-bottom">All Rights reserved by &copy; DHD Hair 2022</p>
+
+
+
+    <script src="main.js"></script>
+    <script src="cookies.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

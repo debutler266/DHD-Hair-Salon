@@ -1,0 +1,762 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  min-height: 200vh;
+}
+
+/* Nav Mobile menu */
+#burger{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ffffff;
+  background: #111;
+  font-size: 32px;
+  padding: 16px 16px 32px 32px;
+  border-radius: 0% 0% 0% 100%;
+  transition: 1s;
+  cursor: pointer;
+  margin-left: 47px;
+  display: none;
+}
+
+#quit{
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 32px;
+  padding: 16px;
+  display: none;
+  cursor: pointer;
+}
+
+#links{
+  display: none;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  padding: 25vh 0;
+  justify-content: space-around;
+}
+
+#links a{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  font-family: 'Roboto';
+  z-index: 10;
+}
+
+#links a:hover {
+  background-color: #ccc transparent;
+  opacity: 0.4;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  padding: 40px 100px;
+  z-index: 100000; /* makes nav list items visible in banner photo */
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #ffffff;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 525px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; ** use in mobile/responsive CSS to only target links in header */
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+  margin-top: 15px;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.5s;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+header ul li a:hover {
+  background-color: #ccc;
+}
+
+
+/* utility class */
+button {
+  background-color: #ffffff;
+  border: none;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+/*Banner */
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(img/hair1.jpg);
+  background-size: cover;
+  background-color: #ccc;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #333;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  line-height: 1.5;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.btn-more {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #111;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-more:hover {
+  background: #ccc;
+  color: #333;
+}
+
+/* Home */
+.home {
+  background-color: #111;
+  padding-top: 75px;
+  padding-bottom: 95px;
+}
+
+.home .container h2 {
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 30px;
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.carousel-caption h3 {
+      margin-bottom: 290px;
+}
+
+.show {
+  margin-top: 75px;
+}
+
+.item a {
+  color: #ffffff;
+}
+
+.item a:hover {
+  color: #fff;
+}
+
+/*Newsletter section */
+.news {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  background-color: #ccc;
+
+}
+
+.newsletter-container {
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter {
+  width: 50%;
+  padding: 200px 8%;
+}
+
+.picture {
+  width: 50%;
+  background: url(img/newsletter.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.newsletter h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.newsletter p {
+  margin-bottom: 35px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/*Showcase */
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .col50 {
+  position: relative;
+  width: 49%;
+}
+
+.titleText {
+  color: #333;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.titleText span {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+  position: relative;
+  width: 100%;
+  /* min-height: 300px; */
+  height: 100%;
+}
+
+.row .col50 .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.show .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.show .content .box {
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #ffffff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.show .content .box .imgBx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.show .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.show .content .box .text {
+  padding: 15px 0 5px;
+}
+
+.show .content .box .text h3 {
+  font-weight: 500;
+  color: #333;
+}
+
+ .box .text a {
+  color: #111;
+}
+
+/*Footer */
+footer {
+  margin-top: 3rem;
+  background-color: #ccc;
+}
+footer p {
+  line-height: 25px;
+  color: #000;
+}
+
+footer h2 h3 {
+  color: #111;
+}
+
+footer h2 {
+  font-size: 18px;
+}
+
+.segment-one h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  letter-spacing: 3px;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+.segment-one p {
+  font-weight: 800;
+}
+
+.segment-two h2 {
+  color: #111;
+  font-family: 'Poppins' sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+
+}
+
+.segment-two ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.segment-two ul li {
+  border-bottom: 1px solid rgba(61, 60, 58, 0.3);
+  line-height: 40px;
+}
+
+.segment-two ul li a {
+  color: #111;
+  margin-left: 25px;
+}
+
+.segment-three h2 {
+  color: #111;
+  text-decoration: underline;
+  font-family: 'Poppins' sans-serif;
+  text-transform: uppercase;
+}
+
+.segment-three a {
+  background: #494848;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.segment-three h5 {
+  display: none;
+}
+
+.segment-three p {
+  font-weight: 700;
+}
+
+.segment-three a i {
+  font-size: 20px;
+  color: #f1f1f1;
+  padding: 10px 12px;
+  align-items: center;
+}
+
+.segment-three a i:hover {
+  color: #111;
+}
+
+.segment-four h2 {
+  color: #111;
+  font-family: 'Poppins' sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.segment-four p {
+  font-weight: 700;
+}
+
+.footer-bottom {
+  text-align: center;
+  background: #000;
+  margin-top: 300px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+
+
+
+/* Media Queries */
+
+/* @media(max-width: 800px) {
+  header .logo {
+    margin-left: 223px;
+  }
+
+   ul .dropdown{
+    display: none;
+  }
+
+  header ul li a {
+    display: none;
+  }
+
+  header.sticky {
+    padding: 30px 100px;
+  }
+
+  #burger {
+    display: inline;
+  }
+
+  .footer-bottom {
+    margin-top: 475px;
+  }
+} */
+
+@media(min-width: 1000px) and (max-width:1024px) {
+  header .logo {
+    margin-left: 366px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width:800px) {
+
+  header .logo {
+    margin-left: 200px;
+  }
+
+   ul .dropdown{
+    display: none;
+  }
+
+  header ul li a {
+    display: none;
+  }
+
+  header.sticky {
+    padding: 30px 100px;
+  }
+
+  #burger {
+    display: inline;
+  }
+
+  .picture {
+    width: 100%;
+    height: 360px;
+  }
+
+  .newsletter {
+    width: 100%;
+    padding: 100px 20%
+  }
+
+  .md-mb-30 {
+    margin-bottom: 30px;
+  }
+
+  .footer-bottom {
+    margin-top: 475px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width:650px) {
+
+  header ul {
+    display: none!important;
+  }
+
+  header .logo {
+    text-align: center;
+    align-items: center;
+    margin-left: 90px;
+    font-size: 14px;
+  }
+
+  header.sticky {
+    padding: 27px 100px;
+  }
+
+  #burger {
+    display: inline;
+  }
+
+  #links a {
+    text-align: center;
+    align-items: center;
+  }
+
+  .newsletter {
+    padding: 100px 30px;
+  }
+
+  .newsletter h1 {
+    text-align: center;
+    align-items: center;
+  }
+
+  .newsletter button {
+    margin-left: 27px;
+  }
+
+  .newsletter p {
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .sm-mb-30 {
+    margin-bottom: 30px;
+  }
+
+
+  .footer-bottom {
+    margin-top: 825px;
+  }
+
+  .footer-top {
+    margin-top: 600px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  header ul {
+		display: none;
+	}
+
+  .banner {
+    background-position: center;
+    justify-content: center;
+  }
+
+  header .logo {
+    text-align: center;
+    align-items: center;
+    margin-left: 80px;
+    font-size: 18px;
+  }
+
+  header.sticky {
+    padding: 27px 100px;
+  }
+
+  #burger {
+    display: inline;
+  }
+
+  #links a {
+    text-align: center;
+    align-items: center;
+    font-size: 0.7em;
+  }
+
+  .newsletter {
+    padding: 100px 30px;
+  }
+
+  .newsletter h1 {
+    text-align: center;
+    align-items: center;
+  }
+
+  .newsletter button {
+    margin-left: 27px;
+  }
+
+  .newsletter p {
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .sm-mb-30 {
+    margin-bottom: 30px;
+  }
+
+  .footer-top {
+    padding: 50px 0;
+  }
+
+  .footer-bottom {
+    margin-top: 1045px;
+
+  }
+
+  .segment-one h3, p {
+    text-align: center;
+  }
+
+  .segment-two h2, ul, li {
+    text-align: center;
+  }
+
+  .segment-two ul li a {
+    margin-left: -15px;
+  }
+
+  .segment-three h2, p {
+    text-align: center;
+  }
+
+  .segment-three a {
+    display: inline-block;
+    margin: 9px 147px 13px 202px;
+  }
+
+  .segment-four h2, p {
+    text-align: center;
+    align-items: center;
+  }
+
+  .segment-four p {
+    display: none;
+  }
+
+  .segment-four .btn-more {
+  margin-left: 161px;
+  }
+
+  .segment-three h5 {
+    display: flex;
+    font-size: 12px;
+    color: #000;
+  }
+
+  .carousel-caption h3 {
+    margin-bottom: 45px;
+}
+  }
+
+  @media(min-width: 300px) and (max-width:400px) {
+    header .logo {
+      text-align: center;
+      align-items: center;
+      margin-left: 30px;
+      font-size: 12px;
+    }
+
+    .segment-three a  {
+      display: inline-block;
+      margin: 9px 147px 13px 125px;
+    }
+
+    .newsletter button {
+      margin-left: -2px;
+  }
+
+  .footer-bottom {
+    margin-top: 1170px;
+
+  }
+
+  .newsletter h1 {
+    font-size: 18px;
+  }
+
+  .segment-four .btn-more {
+  margin-left: 78px;
+  }
+}
